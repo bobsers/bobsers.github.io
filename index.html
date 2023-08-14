@@ -82,7 +82,7 @@
         
         <a href="/tags">
             <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
+            <span>&ensp;标签</span>
         </a>
         
     </nav>
@@ -135,7 +135,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
                     </div>
                 </a>
                 
@@ -149,7 +149,7 @@
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
+    <div id="home-background" ref="homeBackground" data-images="/images/70.png,/images/65.png,/images/30.png"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -223,8 +223,7 @@
         </div>
         <div class="name">bobsers</div>
         <div class="description">
-            <p>Description</p>
-
+            
         </div>
         
         
@@ -274,3 +273,15 @@
         
     </body>
 </html>
+<canvas
+    id="fireworks"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
+></canvas>
+<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+<script src="/js/fireworks.min.js"></script>
+
+<canvas
+    id="background"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 0"
+></canvas>
+<script src="/js/background.min.js"></script>
