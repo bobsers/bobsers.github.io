@@ -1,11 +1,4 @@
-/* 添加半透明背景到博客底部 */
-.site-footer {
-  background-color: rgba(0, 0, 0, 0.5); /* 背景颜色，最后一个值是透明度 */
-  padding: 20px; /* 可根据需要进行调整 */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 #archives {
     margin: auto;
     margin-top: 100px;
@@ -178,7 +171,7 @@
     position: absolute;
     top: 0;
     width: 100vw;
-    z-index: -1;
+    z-index: 0;
 }
 #home-head #home-info .info {
     align-items: center;
@@ -988,4 +981,15 @@ ol li {
     ol {
         padding-left: 20px;
     }
+}
+#background1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
 }
