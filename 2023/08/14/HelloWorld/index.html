@@ -195,10 +195,6 @@
             </span>
             &commat;bobsers
         </div>
-        <div>
-            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
-            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
-        </div>
         
     </div>
 </footer>
@@ -220,13 +216,20 @@
 <script>
     Waline.init({
         el: "#waline-container",
-        serverURL: "",
+        serverURL: "https://comment-6gfoia6gm-bobsers.vercel.app",
         commentCount: true,
         pageview: false,
         emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
         meta: "nick,mail,link".split(","),
         requiredMeta: "nick".split(","),
-        lang: "",
+        lang: "zh-CN",
+		reaction: true,
+		reaction: [
+     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png',
+     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png',
+     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
+     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
+     ],
         wordLimit: 0,
         pageSize: "10",
         login: "enable",
