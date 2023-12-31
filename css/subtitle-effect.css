@@ -1,0 +1,14 @@
+.subtitle-effect {
+  background-color: #ff0000; /* 设置背景颜色为红色 */
+  padding: 10px; /* 添加一些内边距 */
+  animation: fadeIn 2s; /* 添加淡入动画，持续2秒 */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
